@@ -1,17 +1,6 @@
 import CharacterCard from './CharacterCard';
-function App() {
- return (
- <div className="App">
- <div>
- <CharacterCard value="h"/>
- <CharacterCard value="i"/>
- </div>
- <p>
- Hello {"World"}
- </p>
- </div>
- );
-}
+import React from 'react';
+import './App.css';
 const word = "Hello";
 function App() {
  return (
@@ -22,3 +11,4 @@ function App() {
  </div>
  );
 }
+export default App
