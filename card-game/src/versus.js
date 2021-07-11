@@ -1,10 +1,4 @@
-import React from 'react';
-/* 0 = rock 
-   1 = scissors
-   2 = paper
-*/
-
-
+/*import React from 'react';
 
 export default function versus(props){  
     var P1 = props.value
@@ -20,11 +14,8 @@ export default function versus(props){
     </div>
 );
 }
-*/
 
-
-
-/*import React from 'react';
+import React from 'react';
 const choose = ['rock','scissors','paper']
 
 export default function versus(props){  
