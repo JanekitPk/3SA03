@@ -5,52 +5,54 @@ import './App.css';
    2 = paper
 */
 function App() {
-  function test(){
-     console.log("test")
+  function CheckP2(n){
+    if(n==0){
+      console.log("P2 = Rock")
+    }
+    else if(n==1){
+      console.log("P2 = Scissors")
+    }
+    else{
+      console.log("P2 = Paper")
+    }
   }
-  function test2(){
-    console.log("test2")
- }
 
-  const act0 = () => {
-    var P1 = 0
-    console.log("P1="+P1)
+  function act0(){
+    console.log("P1 = Rock")
     var P2 = Math.floor(Math.random()*3)
-    console.log("P2="+P2)
-    if(P1==0&&P2==1){
+    CheckP2(P2)
+    if(P2==1){
         console.log('YouWin!')
     }
-    else if(P1==1&&P2==2){
+    else if(P2==2){
        console.log('YouLose!')
     }
     else{
       console.log('Draw!')
     }
   }
-  const act1 = () => {
-        var P1 = 1
-        console.log("P1="+P1)
+  function act1(){
+        console.log("P1 = Scissors")
         var P2 = Math.floor(Math.random()*3)
-        console.log("P2="+P2)
-        if(P1==1&&P2==2){
+        CheckP2(P2)
+        if(P2==2){
             console.log('YouWin!')
         }
-        else if(P1==1&&P2==0){
+        else if(P2==0){
            console.log('YouLose!')
         }
         else{
           console.log('Draw!')
         }
    } 
-  const act2 = () => {
-          var P1 = 2
-          console.log("P1="+P1)
+  function act2(){
+          console.log("P1 = Paper")
           var P2 = Math.floor(Math.random()*3)
-          console.log("P2="+P2)
-          if(P1==2&&P2==0){
+          CheckP2(P2)
+          if(P2==0){
               console.log('YouWin!')
           }
-          else if(P1==2&&P2==1){
+          else if(P2==1){
              console.log('YouLose!')
           }
           else{
