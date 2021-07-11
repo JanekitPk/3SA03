@@ -7,56 +7,53 @@ import './App.css';
 function App() {
   function CheckP2(n){
     if(n==0){
-      console.log("P2 = Rock")
+      alert("Player 2 use Rock!")
     }
     else if(n==1){
-      console.log("P2 = Scissors")
+      alert("Player 2 use Scissors!")
     }
     else{
-      console.log("P2 = Paper")
+      alert("Player 2 use Paper!")
     }
   }
 
   function act0(){
-    console.log("P1 = Rock")
     var P2 = Math.floor(Math.random()*3)
     CheckP2(P2)
     if(P2==1){
-        console.log('YouWin!')
+      alert('You Win!')
     }
     else if(P2==2){
-       console.log('YouLose!')
+      alert('You Lose!')
     }
     else{
-      console.log('Draw!')
+      alert('Draw!')
     }
   }
   function act1(){
-        console.log("P1 = Scissors")
         var P2 = Math.floor(Math.random()*3)
         CheckP2(P2)
         if(P2==2){
-            console.log('YouWin!')
+          alert('You Win!')
         }
         else if(P2==0){
-           console.log('YouLose!')
+          alert('You Lose!')
         }
         else{
-          console.log('Draw!')
+          alert('Draw!')
         }
    } 
   function act2(){
-          console.log("P1 = Paper")
           var P2 = Math.floor(Math.random()*3)
           CheckP2(P2)
           if(P2==0){
-              console.log('YouWin!')
+            alert('You Win!')
           }
           else if(P2==1){
-             console.log('YouLose!')
+            alert('You Lose!')
           }
           else{
-            console.log('Draw!')
+            alert('Draw!')
           }
    }   
 
@@ -65,6 +62,7 @@ function App() {
     <h1>
      Rock-Scissors-Paper
     </h1>
+    
     <button class="ChooseBtn" onClick={act0}>
       ✊
     </button>
